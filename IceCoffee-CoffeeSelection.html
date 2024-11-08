@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ice Coffee-Coffee Selection</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Catchup&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Oxygen:wght@300;400;700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="ourstorySlideshow.js"></script>
+    <script src="navigationlink.js"></script>
+    <script src="homepageSlideshow.js"></script>
+    <script src="loginandRegister.js"></script>
+    <script src="itemsselection.js"></script>
+
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="search-bar-container">
+                <input type="text" class="search-bar" placeholder="Search...">
+            </div>
+            <div class="logo">
+                <a href="index.html"><img src="images/logo5.png" alt="Bean Boutique Logo"></a>
+                <h1>Bean Boutique</h1>
+            </div>
+            <a href="ShoppingCart.html" class="cart-link">
+                <i class="fas fa-shopping-cart cart-icon"></i>
+            </a>
+            <div class="login-register">
+                <button class="login-btn" id="loginBtn">LOGIN</button>
+                <!-- Pop-up Box -->
+                <div class="popup-box" id="popupBox">
+                    <div class="popup-content">
+                        <span class="close-btn" id="closeBtn">&times;</span>
+                        <h2>Login to Your Account</h2>
+                        <form action="#">
+                            <label for="login-email">Email:</label>
+                            <input type="email" id="login-email" name="email" required placeholder="Enter your email">
+                            <label for="login-password">Password:</label>
+                            <input type="password" id="login-password" name="password" required placeholder="Enter your password">
+                            <button type="submit" class="submit-btn">Login</button>
+                        </form>
+                        <p class="forgot-password">Forgot Password?</p>
+                    </div>
+                </div>
+                <span class="separator">/</span>
+                <button class="register-btn" id="nav-register-btn">REGISTER</button>
+                <!-- Register Pop-up -->
+                <div class="popup-box" id="popupBoxRegister">
+                    <div class="popup-content">
+                        <span class="close-btn" id="closeBtnRegister">&times;</span>
+                        <h2>Register for Coffee Shop</h2>
+                        <form action="mailto:linyuhtun1@gmail.com">
+                            <label for="first-name">First Name:</label>
+                            <input type="text" id="first-name" name="first-name" required placeholder="Enter your first name">
+                            <label for="last-name">Last Name:</label>
+                            <input type="text" id="last-name" name="last-name" required placeholder="Enter your last name">
+                            <label for="register-email">Email:</label>
+                            <input type="email" id="register-email" name="email" required placeholder="Enter your email">
+                            <label for="register-password">Password:</label>
+                            <input type="password" id="register-password" name="password" required placeholder="Enter your password">
+                            
+                            <!-- Choice Events and Workshops -->
+                            <label for="event-selection">Choose Event or Workshop:</label>
+                            <select id="event-selection" name="event-selection" required>
+                                <option value="">Select an event/workshop</option>
+                                <option value="coffee-origins-cultural-events">Coffee Origins & Cultural Events</option>
+                                <option value="holiday-themed-events">Holiday & Themed Events</option>
+                                <option value="coffee-technology-events">Coffee & Technology Events</option>
+                                <option value="live-music-nights">Live Music Nights</option>
+                                <option value="barista-skills-workshops">Barista Skills Workshops</option>
+                                <option value="coffee-brewing-workshops">Coffee Brewing Workshops</option>
+                                <option value="skill-building-hobby-workshops">Skill-Building & Hobby Workshops</option>
+                                <option value="culinary-pastry-workshops">Culinary & Pastry Workshops</option>
+                            </select>
+
+                            <button type="submit" class="submit-btn">Register</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navigation">
+            <ul>
+                <li><a id="home-link" href="index.html" class="showactive-link">Home</a></li>
+                <li><a id="coffee-link" href="CoffeeSelection.html" class="showactive-link">Coffee Selection</a></li>
+                <li><a id="brewing-link" href="BrewingEquipment.html" class="showactive-link">Brewing Equipment</a></li>
+                <li><a id="events-link" href="EventsandWorkshops.html" class="showactive-link">Events and Workshops</a></li>
+                <li><a id="offers-link" href="SpecialOffers.html" class="showactive-link">Special Offers and Subscriptions</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="welcome" id="coffee-selection-welcome">
+        <div class="welcome-contacts" id="coffee-selection-welcome-contacts">
+            <h2>Savor the Best: Our Coffee Collection</h2>
+            <nav class="navigation" id="types-of-coffee">
+                <ul>
+                    <li><a id="home-link-coffee" href="CoffeeSelection.html" class="showactive-link">Coffee Beans</a></li>
+                    <li><a id="coffee-link-ice" href="IceCoffee-CoffeeSelection.html" class="showactive-link">Ice Coffee</a></li>
+                    <li><a id="brewing-link-hot" href="HotCoffee-CoffeeSelection.html" class="showactive-link">Hot Coffee</a></li>
+                    <li><a id="events-link-tea" href="TeaandDessert-CoffeeSelection.html" class="showactive-link">Tea & Dessert</a></li>
+                </ul>
+            </nav>
+            
+        </div>
+    </section>
+
+    <!-- Divider Line -->
+    <div class="section-divider"></div>
+
+    <section class="intro-section">
+        <div class="intro-section-contact">
+            <h2>Ice Coffee</h2>
+            <p>Chilled coffee drinks crafted for refreshing flavors and invigorating energy.</p>
+        </div>
+    </section>
+    <div class="catalogue">
+        <div class="product-card">
+            <img src="images/espresso-coffee.jpg" alt="espresso-coffee">
+            <h3>Espresso Coffee</h3>
+            <p>Concentrated shot of rich, aromatic coffee, perfect for those who appreciate bold coffee flavors.</p>
+            <p class="product-price">$10</p>
+            <div class="button-group">
+                <button class="details-item-btn" onclick="window.location.href='espressoCoffeeDetails.html'">Item Details</button>
+                <button class="add-to-cart-btn" onclick="window.location.href='ShoppingCart.html'">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="images/Irish-Coffee.jpg" alt="Irish-Coffee">
+            <h3>Irish Coffee</h3>
+            <p>A classic blend of coffee and Irish whiskey topped with cream for a delightful treat.</p>
+            <p class="product-price">$12</p>
+            <div class="button-group">
+                <button class="details-item-btn">Item Details</button>
+                <button class="add-to-cart-btn" onclick="window.location.href='ShoppingCart.html'">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="images/espresso-romano-coffee.jpg" alt="espresso-romano-coffee">
+            <h3>Espresso Romano Coffee</h3>
+            <p>Bold espresso shot served with lemon twist, offering a unique balance of flavors and freshness.</p>
+            <p class="product-price">$10</p>
+            <div class="button-group">
+                <button class="details-item-btn">Item Details</button>
+                <button class="add-to-cart-btn" onclick="window.location.href='ShoppingCart.html'">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="images/nitro-coffee.jpg" alt="nitro-coffee">
+            <h3>Nitro Coffee</h3>
+            <p>Smooth, creamy coffee infused with nitrogen for a refreshing, naturally sweet coffee experience.</p>
+            <p class="product-price">$8</p>
+            <div class="button-group">
+                <button class="details-item-btn">Item Details</button>
+                <button class="add-to-cart-btn" onclick="window.location.href='ShoppingCart.html'">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="images/yuan-yang-coffee.jpg" alt="yuan-yang-coffee">
+            <h3>Yuan Yuan Coffee</h3>
+            <p>A delicious mix of coffee and milk tea, offering a unique, sweet flavor combination.</p>
+            <p class="product-price">$9</p>
+            <div class="button-group">
+                <button class="details-item-btn">Item Details</button>
+                <button class="add-to-cart-btn" onclick="window.location.href='ShoppingCart.html'">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="images/ice-coffee-latte.jpg" alt="ice-coffee-latte">
+            <h3>Ice Coffee Latte</h3>
+            <p>A refreshing blend of espresso and creamy milk served over ice for a cool treat.</p>
+            <p class="product-price">$7</p>
+            <div class="button-group">
+                <button class="details-item-btn">Item Details</button>
+                <button class="add-to-cart-btn" onclick="window.location.href='ShoppingCart.html'">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="images/affogato.jpg" alt="affogato-coffee">
+            <h3>Affogato</h3>
+            <p>Vanilla gelato topped with hot espresso creates a delightful dessert-coffee combination for indulgent enjoyment.</p>
+            <p class="product-price">$6</p>
+            <div class="button-group">
+                <button class="details-item-btn">Item Details</button>
+                <button class="add-to-cart-btn" onclick="window.location.href='ShoppingCart.html'">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="images/cold-brew-coffee.jpg" alt="cold-brew-coffee">
+            <h3>Cold Brew Coffee</h3>
+            <p>Slow-steeped coffee with smooth, rich flavor and low acidity, served chilled for refreshment.</p>
+            <p class="product-price">$5</p>
+            <div class="button-group">
+                <button class="details-item-btn" >Item Details</button>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="images/Macchiato.jpg" alt="Macchiato">
+            <h3>Macchiato</h3>
+            <p>A bold espresso shot marked with a touch of steamed milk for a strong coffee experience.</p>
+            <p class="product-price">$4</p>
+            <div class="button-group">
+                <button class="details-item-btn">Item Details</button>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="images/Mocha.jpg" alt="Mocha">
+            <h3>Mocha</h3>
+            <p>Rich espresso combined with chocolate syrup and steamed milk, topped with whipped cream for indulgence.</p>
+            <p class="product-price">$5</p>
+            <div class="button-group">
+                <button class="details-item-btn">Item Details</button>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="images/cortado-coffee.jpg" alt="cortado-coffee">
+            <h3>Cortado Coffee</h3>
+            <p>Equal parts espresso and steamed milk create a smooth, balanced coffee experience in every sip.</p>
+            <p class="product-price">$4</p>
+            <div class="button-group">
+                <button class="details-item-btn">Item Details</button>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="images/flat-white-coffee.jpg" alt="flat-white-coffee">
+            <h3>Flat White Coffee</h3>
+            <p>A velvety espresso-based drink with microfoam milk, offering a rich coffee flavor and creamy texture.</p>
+            <p class="product-price">$6</p>
+            <div class="button-group">
+                <button class="details-item-btn">Item Details</button>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="images/cold-vanilla-soy-latte.jpg" alt="cold-vanilla-soy latte">
+            <h3>Cold Vanilla Soy Latte</h3>
+            <p>Refreshing espresso blended with creamy vanilla syrup and soy milk, served chilled for enjoyment.</p>
+            <p class="product-price">$6</p>
+            <div class="button-group">
+                <button class="details-item-btn">Item Details</button>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="images/cappuccino-coffee.jpg" alt="cappuccino-coffee">
+            <h3>Cappuccino Coffee</h3>
+            <p>Classic Italian coffee with equal parts espresso, steamed milk, and frothy foam for balance.</p>
+            <p class="product-price">$5</p>
+            <div class="button-group">
+                <button class="details-item-btn">Item Details</button>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="images/Americano-Coffee.jpg" alt="Americano-Coffee">
+            <h3>Americano Coffee</h3>
+            <p>Rich espresso diluted with hot water, delivering a bold flavor with a mellow finish.</p>
+            <p class="product-price">$4</p>
+            <div class="button-group">
+                <button class="details-item-btn">Item Details</button>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-content">
+            <!-- Logo and Slogan -->
+            <div class="footer-logo">
+                <a href="index.html"><img src="images/logo5.png" alt="Bean Boutique Logo"></a>
+                <h2>BEAN BOUTIQUE COFFEE SHOP</h2>
+            </div>
+
+            <!-- Navigation Links -->
+            <div class="footer-links">
+                <div>
+                    <h3>EXPLORE</h3>
+                    <a href="index.html">Home</a><br>
+                    <a href="CoffeeSelection.html">Coffee Selections</a><br>
+                    <a href="index.html">Brewing Equipment</a><br>
+                    <a href="EventsandWorkshops.html">Events and Workshops</a><br>
+                    <a href="SpecialOffers.html">Special Offers and Subscriptions</a>
+                </div>
+                <div>
+                    <h3>ABOUT US</h3>
+                    <a href="ourStory.html">Our Story</a><br>
+                </div>
+                <div>
+                    <h3>CONTACT US</h3>
+                    <p><strong>Location: </strong>Junction City, 3rd Floor</p>
+                    <p><strong>Phone:</strong> <a href="tel:+1234567890">+959427533492</a></p>
+                    <p><strong>Email:</strong> <a href="mail:beanboutiqueofficial@gmail.com">beanboutiqueofficial@gmail.com</a></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="footer-social">
+            <a href="https://facebook.com" class="social-icon" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://instagram.com" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com" class="social-icon" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://tiktok.com" class="social-icon" target="_blank"><i class="fab fa-tiktok"></i></a>
+        </div>
+
+        <!-- Copyright -->
+        <div class="footer-copyright">
+            <p>&copy; 2024 Bean Boutique. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brewing Equipment</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Catchup&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Oxygen:wght@300;400;700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="ourstorySlideshow.js"></script>
+    <script src="navigationlink.js"></script>
+    <script src="homepageSlideshow.js"></script>
+    <script src="loginandRegister.js"></script>
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="search-bar-container">
+                <input type="text" class="search-bar" placeholder="Search...">
+            </div>
+            <div class="logo">
+                <a href="index.html"><img src="images/logo5.png" alt="Bean Boutique Logo"></a>
+                <h1>Bean Boutique</h1>
+            </div>
+            <a href="ShoppingCart.html" class="cart-link">
+                <i class="fas fa-shopping-cart cart-icon"></i>
+            </a>
+            <div class="login-register">
+                <button class="login-btn" id="loginBtn">LOGIN</button>
+                <!-- Pop-up Box -->
+                <div class="popup-box" id="popupBox">
+                    <div class="popup-content">
+                        <span class="close-btn" id="closeBtn">&times;</span>
+                        <h2>Login to Your Account</h2>
+                        <form action="#">
+                            <label for="login-email">Email:</label>
+                            <input type="email" id="login-email" name="email" required placeholder="Enter your email">
+                            <label for="login-password">Password:</label>
+                            <input type="password" id="login-password" name="password" required placeholder="Enter your password">
+                            <button type="submit" class="submit-btn">Login</button>
+                        </form>
+                        <p class="forgot-password">Forgot Password?</p>
+                    </div>
+                </div>
+                <span class="separator">/</span>
+                <button class="register-btn" id="nav-register-btn">REGISTER</button>
+                <!-- Register Pop-up -->
+                <div class="popup-box" id="popupBoxRegister">
+                    <div class="popup-content">
+                        <span class="close-btn" id="closeBtnRegister">&times;</span>
+                        <h2>Register for Coffee Shop</h2>
+                        <form action="mailto:linyuhtun1@gmail.com">
+                            <label for="first-name">First Name:</label>
+                            <input type="text" id="first-name" name="first-name" required placeholder="Enter your first name">
+                            <label for="last-name">Last Name:</label>
+                            <input type="text" id="last-name" name="last-name" required placeholder="Enter your last name">
+                            <label for="register-email">Email:</label>
+                            <input type="email" id="register-email" name="email" required placeholder="Enter your email">
+                            <label for="register-password">Password:</label>
+                            <input type="password" id="register-password" name="password" required placeholder="Enter your password">
+                            
+                            <!-- Choice Events and Workshops -->
+                            <label for="event-selection">Choose Event or Workshop:</label>
+                            <select id="event-selection" name="event-selection" required>
+                                <option value="">Select an event/workshop</option>
+                                <option value="coffee-origins-cultural-events">Coffee Origins & Cultural Events</option>
+                                <option value="holiday-themed-events">Holiday & Themed Events</option>
+                                <option value="coffee-technology-events">Coffee & Technology Events</option>
+                                <option value="live-music-nights">Live Music Nights</option>
+                                <option value="barista-skills-workshops">Barista Skills Workshops</option>
+                                <option value="coffee-brewing-workshops">Coffee Brewing Workshops</option>
+                                <option value="skill-building-hobby-workshops">Skill-Building & Hobby Workshops</option>
+                                <option value="culinary-pastry-workshops">Culinary & Pastry Workshops</option>
+                            </select>
+                            
+                            <button type="submit" class="submit-btn">Register</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navigation">
+            <ul>
+              <li><a id="home-link" href="index.html" class="showactive-link">Home</a></li>
+              <li><a id="coffee-link" href="CoffeeSelection.html" class="showactive-link">Coffee Selection</a></li>
+              <li><a id="brewing-link" href="BrewingEquipment.html" class="showactive-link">Brewing Equipment</a></li>
+              <li><a id="events-link" href="EventsandWorkshops.html" class="showactive-link">Events and Workshops</a></li>
+              <li><a id="offers-link" href="SpecialOffers.html" class="showactive-link">Special Offers and Subscriptions</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="welcome" id="equipment-welcome">
+        <div class="welcome-contacts">
+            <h2>Types of Brewing Equipment</h2>
+            <p>Discover the essential brewing equipment needed to create the perfect cup of coffee. From French presses to espresso machines, each tool brings out different flavors and aromas in your coffee.</p>
+        </div>
+    </section>
+
+    <!-- Divider Line -->
+    <div class="section-divider"></div>
+
+    <!-- Coffee Machines -->
+    <section class="intro-section">
+        <div class="intro-section-contact">
+            <h2>Machines</h2>
+            <p>Reliable coffee machines designed to brew your perfect cup every time.</p>
+        </div>
+    </section>
+
+    <div class="catalogue">
+        <div class="product-card">
+            <img src="images/espresso-machine1.jpg" alt="Espresso Machine">
+            <h3>Espresso Machine</h3>
+            <p>Professional machine for brewing rich, concentrated espresso shots at home.</p>
+            <p class="product-price">$200</p>
+            <div class="button-group">
+                    <button class="details-item-btn" onclick="window.location.href='espressomachineDetails.html'">Item Details</button>
+                    <button class="add-to-cart-btn" onclick="window.location.href='ShoppingCart.html'">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="images/french-press-coffee-maker.jpg" alt="french-press-coffee-maker">
+            <h3>French Press Coffee Marker</h3>
+            <p>Classic press brewing method for full-bodied, aromatic coffee in minutes.</p>
+            <p class="product-price">$150</p>
+            <div class="button-group">
+                <button class="details-item-btn" onclick="window.location.href='frenchPressDetails.html'">Item Details</button>
+                <button class="add-to-cart-btn" onclick="window.location.href='ShoppingCart.html'">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="images/pour-over-equipment.jpg" alt="pour-over">
+            <h3>Pour Over Equipment</h3>
+            <p>Essential gear for brewing perfect pour-over coffee every time.</p>
+            <p class="product-price">$100</p>
+            <div class="button-group">
+                <button class="details-item-btn" onclick="window.location.href='pourOverDetails.html'">Item Details</button>
+                <button class="add-to-cart-btn" onclick="window.location.href='ShoppingCart.html'">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="images/percolator-coffee-machine.jpg" alt="Manual-Espresso-Press">
+            <h3>Percolator Coffee Machine</h3>
+            <p>Classic percolator for rich, full-bodied coffee brews.</p>
+            <p class="product-price">$100</p>
+            <div class="button-group">
+                    <button class="details-item-btn">Item Details</button>
+                    <button class="add-to-cart-btn" onclick="window.location.href='ShoppingCart.html'">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="images/Manual-Espresso-Press.jpg" alt="Manual-Espresso-Press">
+            <h3>Manual Espresso Press</h3>
+            <p>Compact, hands-on espresso maker for authentic coffee extraction control.</p>
+            <p class="product-price">$60</p>
+            <div class="button-group">
+                    <button class="details-item-btn">Item Details</button>
+                    <button class="add-to-cart-btn" onclick="window.location.href='ShoppingCart.html'">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="images/Moka-Pot-(Stovetop-Espresso-Maker).jpg" alt="Drip-Coffee-Maker-machine">
+            <h3>Moka Pot (Stovetop Espresso Maker) </h3>
+            <p>Traditional Moka Pot for bold, Italian-style espresso</p>
+            <p class="product-price">$110</p>
+            <div class="button-group">
+                <button class="details-item-btn">Item Details</button>
+                <button class="add-to-cart-btn" onclick="window.location.href='ShoppingCart.html'">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="images/drip-coffee-maker(commercial).jpg" alt="Drip-Coffee-Maker-machine">
+            <h3>Drip Coffee Maker </h3>
+            <p>Automatic coffee maker delivering smooth, balanced coffee with easy brewing.</p>
+            <p class="product-price">$135</p>
+            <div class="button-group">
+                <button class="details-item-btn">Item Details</button>
+                <button class="add-to-cart-btn" onclick="window.location.href='ShoppingCart.html'">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="images/Sipho-Brewer-(Vacuum-Pot).jpg" alt="sipho- Brewer -(Vacuum Pot)">
+            <h3>Syphon Brewer (Vacuum Pot)</h3>
+            <p>Elegant vacuum brewer offering a smooth, clean coffee extraction experience.</p>
+            <p class="product-price">$120</p>
+            <div class="button-group">
+                <button class="details-item-btn">Item Details</button>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="images/Ice-Drip-Coffee-Maker.jpg" alt="Ice Drip-Coffee-Maker">
+            <h3>Ice Drip Coffee Maker</h3>
+            <p>Slow-drip brewer creating cold coffee with rich, concentrated flavor.</p>
+            <p class="product-price">$100</p>
+            <div class="button-group">
+                <button class="details-item-btn">Item Details</button>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="images/hot-water-dispenser.jpg" alt="hot-water-dispenser">
+            <h3>Hot Water Dispenser</h3>
+            <p>Convenient dispenser providing instant hot water for beverages and more.</p>
+            <p class="product-price">$45</p>
+            <div class="button-group">
+                <button class="details-item-btn">Item Details</button>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Divider Line -->
+    <div class="section-divider"></div>
+
+    <!-- Coffee Grinders -->
+    <section class="intro-section">
+        <div class="intro-section-contact">
+            <h2>Grinders</h2>
+            <p>High-quality grinders for consistent, fresh coffee grounds and optimal flavor.</p>
+        </div>
+    </section>
+    
+    <div class="catalogue">
+        <div class="product-card">
+            <img src="images/electric-coffee-grinder.jpg" alt="electric-coffee-grinder">
+            <h3>Electric Coffee Grinder</h3>
+            <p>Powerful electric grinder for fast, consistent coffee grounds at home.</p>
+            <p class="product-price">$150</p>
+            <div class="button-group">
+                <button class="details-item-btn">Item Details</button>
+                <button class="add-to-cart-btn" onclick="window.location.href='ShoppingCart.html'">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="images/manual-coffee-grinder.jpg" alt="manual-coffee-grinder">
+            <h3>Munual Coffee Grinder</h3>
+            <p>Portable, hand-powered grinder offering precise control for fresh coffee grounds.</p>
+            <p class="product-price">$110</p>
+            <div class="button-group">
+                <button class="details-item-btn" >Item Details</button>
+                <button class="add-to-cart-btn" onclick="window.location.href='ShoppingCart.html'">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="images/Turkish-Coffee-Grinder.jpg" alt="Turkish-Coffee-Grinder">
+            <h3>Turkish Coffee Grinder</h3>
+            <p>Specialized grinder producing ultra-fine grounds perfect for Turkish coffee.</p>
+            <p class="product-price">$160</p>
+            <div class="button-group">
+                <button class="details-item-btn">Item Details</button>
+                <button class="add-to-cart-btn" onclick="window.location.href='ShoppingCart.html'">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="images/Espresso-Grinder.jpg" alt="Espresso-Grinder">
+            <h3>Espresso Grinder</h3>
+            <p>Precision grinder designed for fine, consistent grounds ideal for espresso.</p>
+            <p class="product-price">$120</p>
+            <p>$15</p>
+            <div class="button-group">
+                <button class="details-item-btn">Item Details</button>
+                <button class="add-to-cart-btn" onclick="window.location.href='ShoppingCart.html'">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="images/blade-coffee-grinder.jpg" alt="blade-coffee-grinder">
+            <h3>Blad Coffee Grinder</h3>
+            <p>Efficient blade grinder for versatile, quick grinding at an affordable price.</p>
+            <p class="product-price">$140</p>
+            <div class="button-group">
+                <button class="details-item-btn">Item Details</button>
+                <button class="add-to-cart-btn" onclick="window.location.href='ShoppingCart.html'">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="images/single-dose-grinder.jpg" alt="single-dose-grinder">
+            <h3>Single Does Grinder</h3>
+            <p>High-precision grinder ensuring consistent grounds with minimal waste per use.</p>
+            <p class="product-price">$130</p>
+            <div class="button-group">
+                <button class="details-item-btn">Item Details</button>
+                <button class="add-to-cart-btn" onclick="window.location.href='ShoppingCart.html'">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Divider Line -->
+    <div class="section-divider"></div>
+
+    <!-- Others Equipments -->
+    <section class="intro-section">
+        <div class="intro-section-contact">
+            <h2>Others Equipments</h2>
+            <p>Additional coffee tools and equipment to complete your brewing setup.</p>
+        </div>
+    </section>
+
+    <div class="catalogue">
+        <div class="product-card">
+            <img src="images/tamping-station.jpg" alt="tamping-station">
+            <h3>Tamping Station</h3>
+            <p>Secure, organized station for tamping espresso grounds with stability.</p>
+            <p class="product-price">$35</p>
+            <div class="button-group">
+                <button class="details-item-btn">Item Details</button>
+                <button class="add-to-cart-btn" onclick="window.location.href='ShoppingCart.html'">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="images/smart-barista-coffee-scale-and-timer.jpg" alt="smart-barista-coffee-scale-and-timer">
+            <h3>Smart Barista Coffee Scale and Timer</h3>
+            <p>Precision coffee scale with timer for perfect brewing.</p>
+            <p class="product-price">$50</p>
+            <div class="button-group">
+                <button class="details-item-btn">Item Details</button>
+                <button class="add-to-cart-btn" onclick="window.location.href='ShoppingCart.html'">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="images/Espresso-Knock-Box.jpg" alt="espresso-knock-box">
+            <h3>Espresso Knock Box</h3>
+            <p>Durable box for quick disposal of used espresso grounds.</p>
+            <p class="product-price">$25</p>
+            <div class="button-group">
+                <button class="details-item-btn">Item Details</button>
+                <button class="add-to-cart-btn" onclick="window.location.href='ShoppingCart.html'">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="images/Reusable-Coffee-Pod.jpg" alt="Reusable-coffee-pod">
+            <h3>Reusable Coffee Pod</h3>
+            <p>Eco-friendly, refillable pod for fresh coffee with less waste.</p>
+            <p class="product-price">$15</p>
+            <div class="button-group">
+                <button class="details-item-btn">Item Details</button>
+                <button class="add-to-cart-btn" onclick="window.location.href='ShoppingCart.html'">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="images/coffee-grinder-brush.jpg" alt="Drip-Coffee-Maker-machine">
+            <h3>Coffee Grinder Brush </h3>
+            <p>Efficient Coffee Grinder Brush for precise, easy cleaning.</p>
+            <p class="product-price">$75</p>
+            <div class="button-group">
+                <button class="details-item-btn">Item Details</button>
+                <button class="add-to-cart-btn" onclick="window.location.href='ShoppingCart.html'">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="images/Turkish-Coffee-Pot-(Ibrik-or-Cezve).jpg" alt="Drip-Coffee-Maker-machine">
+            <h3>Turkish Coffee Pot (Ibrik or Cezve) </h3>
+            <p>Authentic Turkish Coffee Pot, perfect for rich, flavorful coffee.</p>
+            <p class="product-price">$135</p>
+            <div class="button-group">
+                <button class="details-item-btn">Item Details</button>
+                <button class="add-to-cart-btn" onclick="window.location.href='ShoppingCart.html'">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="images/coffee-urn-Hot-Beverage-Dispenser.jpg" alt="coffee-urn-Hot-Beverage-Dispenser">
+            <h3>Coffee Urn Hot Beverage Dispenser</h3>
+            <p>Large-capacity dispenser for serving hot coffee at events or gatherings.</p>
+            <p class="product-price">$80</p>
+            <div class="button-group">
+                <button class="details-item-btn">Item Details</button>
+                <button class="add-to-cart-btn" onclick="window.location.href='ShoppingCart.html'">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="images/Rocket-Knock-Box.jpg" alt="Rocket-Knock-Box">
+            <h3>Rocket Knock Box</h3>
+            <p>Durable knock box for quick, easy disposal of espresso grounds.</p>
+            <p class="product-price">$125</p>
+            <div class="button-group">
+                <button class="details-item-btn">Item Details</button>
+                <button class="add-to-cart-btn" onclick="window.location.href='ShoppingCart.html'">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="images/coffee-beater-frother-machine.jpg" alt="coffee-beater-frother-machine">
+            <h3>Coffee Beater Frother Machine</h3>
+            <p>Handheld frother for creating creamy, frothed milk for coffee drinks.</p>
+            <p class="product-price">$150</p>
+            <div class="button-group">
+                <button class="details-item-btn">Item Details</button>
+                <button class="add-to-cart-btn" onclick="window.location.href='ShoppingCart.html'">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-content">
+            <!-- Logo and Slogan -->
+            <div class="footer-logo">
+                <a href="index.html"><img src="images/logo5.png" alt="Bean Boutique Logo"></a>
+                <h2>BEAN BOUTIQUE COFFEE SHOP</h2>
+            </div>
+
+            <!-- Navigation Links -->
+            <div class="footer-links">
+                <div>
+                    <h3>EXPLORE</h3>
+                    <a href="index.html">Home</a><br>
+                    <a href="CoffeeSelection.html">Coffee Selections</a><br>
+                    <a href="index.html">Brewing Equipment</a><br>
+                    <a href="EventsandWorkshops.html">Events and Workshops</a><br>
+                    <a href="SpecialOffers.html">Special Offers and Subscriptions</a>
+                </div>
+                <div>
+                    <h3>ABOUT US</h3>
+                    <a href="ourStory.html">Our Story</a><br>
+                </div>
+                <div>
+                    <h3>CONTACT US</h3>
+                    <p><strong>Location: </strong>Junction City, 3rd Floor</p>
+                    <p><strong>Phone:</strong> <a href="tel:+1234567890">+959427533492</a></p>
+                    <p><strong>Email:</strong> <a href="mail:beanboutiqueofficial@gmail.com">beanboutiqueofficial@gmail.com</a></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="footer-social">
+            <a href="https://facebook.com" class="social-icon" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://instagram.com" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com" class="social-icon" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://tiktok.com" class="social-icon" target="_blank"><i class="fab fa-tiktok"></i></a>
+        </div>
+
+        <!-- Copyright -->
+        <div class="footer-copyright">
+            <p>&copy; 2024 Bean Boutique. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

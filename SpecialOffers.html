@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Offers and Subscriptions</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Catchup&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Oxygen:wght@300;400;700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="ourstorySlideshow.js"></script>
+    <script src="navigationlink.js"></script>
+    <script src="homepageSlideshow.js"></script>
+    <script src="loginandRegister.js"></script>
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="search-bar-container">
+                <input type="text" class="search-bar" placeholder="Search...">
+            </div>
+            <div class="logo">
+                <a href="index.html"><img src="images/logo5.png" alt="Bean Boutique Logo"></a>
+                <h1>Bean Boutique</h1>
+            </div>
+            <a href="ShoppingCart.html" class="cart-link">
+                <i class="fas fa-shopping-cart cart-icon"></i>
+            </a>
+            <div class="login-register">
+                <button class="login-btn" id="loginBtn">LOGIN</button>
+                <!-- Pop-up Box -->
+                <div class="popup-box" id="popupBox">
+                    <div class="popup-content">
+                        <span class="close-btn" id="closeBtn">&times;</span>
+                        <h2>Login to Your Account</h2>
+                        <form action="#">
+                            <label for="login-email">Email:</label>
+                            <input type="email" id="login-email" name="email" required placeholder="Enter your email">
+                            <label for="login-password">Password:</label>
+                            <input type="password" id="login-password" name="password" required placeholder="Enter your password">
+                            <button type="submit" class="submit-btn">Login</button>
+                        </form>
+                        <p class="forgot-password">Forgot Password?</p>
+                    </div>
+                </div>
+                <span class="separator">/</span>
+                <button class="register-btn" id="nav-register-btn">REGISTER</button>
+                <!-- Register Pop-up -->
+                <div class="popup-box" id="popupBoxRegister">
+                    <div class="popup-content">
+                        <span class="close-btn" id="closeBtnRegister">&times;</span>
+                        <h2>Register for Coffee Shop</h2>
+                        <form action="mailto:linyuhtun1@gmail.com">
+                            <label for="first-name">First Name:</label>
+                            <input type="text" id="first-name" name="first-name" required placeholder="Enter your first name">
+                            <label for="last-name">Last Name:</label>
+                            <input type="text" id="last-name" name="last-name" required placeholder="Enter your last name">
+                            <label for="register-email">Email:</label>
+                            <input type="email" id="register-email" name="email" required placeholder="Enter your email">
+                            <label for="register-password">Password:</label>
+                            <input type="password" id="register-password" name="password" required placeholder="Enter your password">
+                            
+                            <!-- Choice Events and Workshops -->
+                            <label for="event-selection">Choose Event or Workshop:</label>
+                            <select id="event-selection" name="event-selection" required>
+                                <option value="">Select an event/workshop</option>
+                                <option value="coffee-origins-cultural-events">Coffee Origins & Cultural Events</option>
+                                <option value="holiday-themed-events">Holiday & Themed Events</option>
+                                <option value="coffee-technology-events">Coffee & Technology Events</option>
+                                <option value="live-music-nights">Live Music Nights</option>
+                                <option value="barista-skills-workshops">Barista Skills Workshops</option>
+                                <option value="coffee-brewing-workshops">Coffee Brewing Workshops</option>
+                                <option value="skill-building-hobby-workshops">Skill-Building & Hobby Workshops</option>
+                                <option value="culinary-pastry-workshops">Culinary & Pastry Workshops</option>
+                            </select>
+
+                            <button type="submit" class="submit-btn">Register</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navigation">
+            <ul>
+              <li><a id="home-link" href="index.html" class="showactive-link">Home</a></li>
+              <li><a id="coffee-link" href="CoffeeSelection.html" class="showactive-link">Coffee Selection</a></li>
+              <li><a id="brewing-link" href="BrewingEquipment.html" class="showactive-link">Brewing Equipment</a></li>
+              <li><a id="events-link" href="EventsandWorkshops.html" class="showactive-link">Events and Workshops</a></li>
+              <li><a id="offers-link" href="SpecialOffers.html" class="showactive-link">Special Offers and Subscriptions</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="subscription-section">
+        <h2>Choose Your Subscription Plan</h2>
+        <div class="plans-container">
+            <div class="plan popular">
+                <span class="badge">Most Popular</span>
+                <h2>Artisan's Reserve</h2>
+                <p class="price">$15/month</p>
+                <ul>
+                    <li>Monthly access to exclusive coffee workshops</li>
+                    <li>45% discount on all coffee products</li>
+                    <li>Priority access to limited-edition beans</li>
+                    <li>Priority email support</li>
+                </ul>
+                <button class="subscribe-btn" onclick="window.location.href='index.html'">Subscribe Now</button>
+            </div>
+        
+            <div class="plan">
+                <h2>Student Saver</h2>
+                <p class="price">$5/month</p>
+                <ul>
+                    <li>Monthly supply of affordable coffee essentials</li>
+                    <li>20% off all online orders</li>
+                    <li>Exclusive access to budget-friendly coffee blends</li>
+                    <li>One free drink per semester</li>
+                </ul>
+                <button class="subscribe-btn" onclick="window.location.href='index.html'">Subscribe Now</button>
+            </div>
+
+            <div class="plan popular">
+                <span class="badge">Free Shipping</span>
+                <h2>Free Delivery Brew</h2>
+                <p class="price">$10/month </p>
+                <ul>
+                    <li>Monthly delivery of your favorite coffee blend</li>
+                    <li>Free shipping on all orders, no minimum required</li>
+                    <li>10% discount on all online purchases</li>
+                    <li>Exclusive access to new product launches</li>
+                </ul>
+                <button class="subscribe-btn" onclick="window.location.href='index.html'">Subscribe Now</button>
+            </div>
+            
+            <div class="plan">
+                <h2>Elite Espresso</h2>
+                <p class="price">$40/month</p>
+                <ul>
+                    <li>VIP access to all events and workshops</li>
+                    <li>20% discount on all products</li>
+                    <li>Monthly delivery of a premium coffee selection</li>
+                    <li>Exclusive access to new coffee blends</li>
+                    <li>Dedicated support line</li>
+                </ul>
+                <button class="subscribe-btn" onclick="window.location.href='index.html'">Subscribe Now</button>
+            </div>
+        </div>
+    </section>
+        
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-content">
+            <!-- Logo and Slogan -->
+            <div class="footer-logo">
+                <a href="index.html"><img src="images/logo5.png" alt="Bean Boutique Logo"></a>
+                <h2>BEAN BOUTIQUE COFFEE SHOP</h2>
+            </div>
+
+            <!-- Navigation Links -->
+            <div class="footer-links">
+                <div>
+                    <h3>EXPLORE</h3>
+                    <a href="index.html">Home</a><br>
+                    <a href="CoffeeSelection.html">Coffee Selections</a><br>
+                    <a href="index.html">Brewing Equipment</a><br>
+                    <a href="EventsandWorkshops.html">Events and Workshops</a><br>
+                    <a href="SpecialOffers.html">Special Offers and Subscriptions</a>
+                </div>
+                <div>
+                    <h3>ABOUT US</h3>
+                    <a href="ourStory.html">Our Story</a><br>
+                </div>
+                <div>
+                    <h3>CONTACT</h3>
+                    <p><strong>Location: </strong>Junction City, 3rd Floor</p>
+                    <p><strong>Phone:</strong> <a href="tel:+1234567890">+959427533492</a></p>
+                    <p><strong>Email:</strong> <a href="mail:beanboutiqueofficial@gmail.com">beanboutiqueofficial@gmail.com</a></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="footer-social">
+            <a href="https://facebook.com" class="social-icon" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://instagram.com" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com" class="social-icon" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://tiktok.com" class="social-icon" target="_blank"><i class="fab fa-tiktok"></i></a>
+        </div>
+
+        <!-- Copyright -->
+        <div class="footer-copyright">
+            <p>&copy; 2024 Bean Boutique. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
